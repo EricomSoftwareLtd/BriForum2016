@@ -1,0 +1,38 @@
+.sprite{ background-image: url("../resources/images/toolbar/icons.png");  background-position:top left; background-repeat: no-repeat; background-position:0 0; width:24px; height:24px; background-size: cover;}
+
+
+.arrow-left{ margin-top: 2px; background-image:url("../resources/images/toolbar/L_arrow.png");  background-position: center center; width:9px; height:18px; }
+.arrow-right{ margin-top: 2px; background-image:url("../resources/images/toolbar/R_arrow.png") ;  background-position: center center; width:9px; height:18px; }
+
+.icon-toolbox{ background-image:url("../resources/images/toolbar/tools_24.png"); }
+
+.icon-Gestures{ background-image:url("../resources/images/toolbar/gesturesHelp_24.png"); }
+.icon-ESC{ background-image:url("../resources/images/toolbar/ESC_24.png"); }
+.icon-TAB{ background-image:url("../resources/images/toolbar/TAB_24.png"); }
+.icon-WIN{ background-image:url("../resources/images/toolbar/windows_24.png"); }
+.icon-Disconnect{ background-image:url("../resources/images/toolbar/disconnect_24.png"); }
+.icon-help{ background-image:url("../resources/images/toolbar/info_24.png"); }
+
+.icon-keyboard{ background-image:url("../resources/images/toolbar/TAB_24.png"); }
+.icon-upload{ background-image:url("../resources/images/toolbar/FileUp_v2_24.png"); }
+.icon-download{ background-image:url("../resources/images/toolbar/FileDn_v2_24.png"); }
+.icon-copy_to_remote{ background-image:url("../resources/images/toolbar/clipBrd_24.png"); }
+
+
+.icon-copy_to_local{ width:25px; height:27px; background-position:0 -83px; }
+.icon-mouse{ width:23px; height:27px; background-position:0 -110px; }
+.icon-pin{ width:23px; height:26px; background-position:0 -137px; }
+.icon-onscreen_mouse{ width:29px; height:26px; background-position:0 -163px; }
+.icon-touchpad_mouse{ width:27px; height:26px; background-position:0 -189px; }
+.icon-special_keyboard{ width:26px; height:25px; background-position:0 -215px; }
+.icon-pc_keyboard{ width:26px; height:25px; background-position:0 -240px; }
+.icon-special_kyes{ width:23px; height:23px; background-position:0 -265px; }
+
+
+
+.icon-CTRL{ width:27px; height:10px; background-position:0 -373px; }
+
+.icon-ALT{ width:20px; height:10px; background-position:0 -393px; }
+
+
+

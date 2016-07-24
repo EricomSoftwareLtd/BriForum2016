@@ -1,0 +1,236 @@
+html,
+body {
+	margin: 0;
+}
+
+.Animation {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.Block {
+	display: block;
+}
+.Fixed {
+	position: fixed;
+}
+.Absolute {
+	position: absolute;
+}
+.Relative {
+	position: relative;
+}
+.toFront {
+	z-index: 2;
+}
+.toBack {
+	z-index: 1;
+}
+.Top {
+	top: 0;
+}
+.Bottom {
+	bottom: 0;
+}
+.Left {
+	left: 0;
+}
+.Right {
+	right: 0;
+}
+
+#ToolBar.Top {
+	top: 20px;
+}
+#ToolBar.Bottom {
+	bottom: 20px;
+}
+#ToolBar.Left {
+	left: 20px;
+}
+#ToolBar.Right {
+	right: 60px;
+}
+.Purple {
+	background: #ca2158;
+}
+.Orange {
+	background: #e18200;
+}
+.Blue {
+	background: #042C3B;
+}
+.Expanded .Blue {
+	background: #063E53;
+}
+
+.Shadow {
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+	-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 2,Color = #4d000000,Positive = true)";
+	filter: progid: DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=2, Color=#4d000000, Positive=true);
+}
+.Rounded {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+.Vertical {
+	width: 40px;
+	visibility: hidden;
+	overflow: hidden;
+	height: 0;
+}
+
+/* height */
+.Active .Vertical{
+	visibility: visible;
+	height: 350px;
+}
+.Horizontal {
+	height: 40px;
+	visibility: hidden;
+	overflow: hidden;
+	width: 0;
+}
+.Active .Horizontal{
+	visibility: visible;
+	width: 30px;
+}
+
+/* width */
+.Expanded .Horizontal{
+	width: 340px;
+}
+.Icon {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+.Icon.Arrow{
+	width: 30px;
+	line-height: 35px;
+	background: #042C3B;
+}
+.Icon.Arrow:before{
+	color: #fff;
+	font-family: cursive;
+	font-size: 28px;
+}
+
+/*
+.Left .Icon.Arrow:before{
+	content: '>';
+}
+.Right .Icon.Arrow:before{
+	content: '<';
+}
+
+.Expanded.Left .Icon.Arrow:before{
+	content: '<';
+}
+.Expanded.Right .Icon.Arrow:before{
+	content: '>';
+}
+*/
+
+i {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -3px;
+}
+
+
+
+.Top .Vertical{
+	padding-top: 40px;
+	top: 0;
+}
+.Right .Horizontal{
+	padding-right: 40px;
+	right: 0;
+}
+.Bottom .Vertical{
+	padding-bottom: 40px;
+	bottom: 0;
+}
+.Left .Horizontal{
+	padding-left: 40px;
+	left: 0;
+}
+.Top .Horizontal{
+	top: 0;
+}
+.Bottom .Horizontal{
+	bottom: 0;
+}
+
+
+
+
+
+.Top.Right.Active .Purple {
+	-webkit-border-bottom-left-radius: 0;
+	-moz-border-bottom-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.Top.Left.Active .Purple {
+	-webkit-border-bottom-right-radius: 0;
+	-moz-border-bottom-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.Bottom.Right.Active .Purple {
+	-webkit-border-Top-left-radius: 0;
+	-moz-border-Top-left-radius: 0;
+	border-Top-left-radius: 0;
+}
+.Bottom.Left.Active .Purple {
+	-webkit-border-Top-right-radius: 0;
+	-moz-border-Top-right-radius: 0;
+	border-Top-right-radius: 0;
+}
+
+.Orange a:hover{
+	background: #AD6400;
+}
+.Blue a:hover{
+	background: #042C3B;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li{
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.Vertical ul{
+	width: 100%;
+}
+
+.Bottom .Vertical ul{	
+	margin-top: 20px;
+}
+.Horizontal ul{
+	height: 100%;
+}
+
+.Right .Horizontal ul{
+	float: left;
+}
+.Right .Horizontal li{
+	float: left;
+}
+.Left .Horizontal ul{
+	float: right;
+}
+.Left .Horizontal li{
+	float: right;
+}

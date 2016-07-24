@@ -1,0 +1,31 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "adminPassword": {
+      "value": "Ericom123$"
+    },
+    
+    "adminUsername": {
+      "value": "Ericom"
+    },
+    
+    "emailAddress": {
+      "value": "David.Oprea@ericom.com"
+    },
+    
+    "domainName": {
+      "value": "test.local"
+    },
+    
+    "numberOfRdshInstances": {
+      "value": 1
+    },
+    "numberOflnxInstances": {
+      "value": 1
+    },
+    "dnsLabelPrefix": {
+      "value": "GEN-UNIQUE"
+    }
+  }
+}
