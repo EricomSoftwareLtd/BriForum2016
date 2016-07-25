@@ -18,7 +18,7 @@ param (
 $RDWEb = "https://RDWEB.test.local"
 $ServerToMonitor = "localhost"
 $NetworkAdmin = "admin@test.local"
-$NetworkPassword = "admin"
+$NetworkPassword = "password"
 
 $AdminSecurePassword = ConvertTo-SecureString -String $NetworkPassword -AsPlainText -Force
 $AdminCredentials = New-Object System.Management.Automation.PSCredential ($NetworkAdmin, $AdminSecurePassword);
@@ -30,7 +30,7 @@ $externalFqdn = [System.Net.Dns]::GetHostByName((hostname)).HostName
 $From = "daas@ericom.com"
 $SMTPServer = "ericom-com.mail.protection.outlook.com"
 $SMTPSUser = "daas@ericom.com"
-$SMTPassword = "IOEQTK4hTMH0GvIpD4Eh"
+$SMTPassword = "password"
 
 $SMTPPort = 25
 
@@ -129,17 +129,19 @@ function TestSystem {
     $AdminSecurePassword = ConvertTo-SecureString -String $NetworkPassword -AsPlainText -Force
 	$AdminCredentials = New-Object System.Management.Automation.PSCredential ($NetworkAdmin, $AdminSecurePassword);
  
-    Get-RDSEventLogs -Computername $ServerToMonitor -credentials $AdminCredentials
+  
 	
 	$PingResult = PingURL -url $RDWEb
+  $ErrorForMail = $PingResult.ErrorText[0].Message
 	if ($PingResult.StatusCode -eq 200)
 	{
 		Write-RDSEventLog -Message "RDWeb  is ok.`n" -EventID 6
 	}
 	else
 	{
+    Get-RDSEventLogs -Computername $ServerToMonitor -credentials $AdminCredentials
 		Write-RDSEventLogError -Message ("RDWeb is not responding. Result of ping was:`n" + $PingResult.ErrorText) -EventID 16
-		SendErrorMail -ErrorText $PingResult.ErrorText -TestName RDWeb;
+		SendErrorMail -ErrorText $ErrorForMail -TestName RDWeb;
 	}
 		
 }
@@ -184,13 +186,13 @@ function SendErrorMail()
 {
 	param (
 		[Parameter(Mandatory = $true)]
-		[string]$ErrorText,
+		$ErrorText,
 		[Parameter(Mandatory = $true)]
 		[string]$TestName
 	)
 	
-	$Subject = "RDS Server " + $TestName + " is not Responding On " + (hostname)
-	$Message = '<h1>RDS server ' + $TestName + ' is not responding at '+ (Get-Date) +'.</h1><p>Dear Customer ,<br><br> ' + $TestName + ' on ' + [System.Net.Dns]::GetHostByName((hostname)).HostName + ' have failed with this error: <br><br><i>"' + $ErrorText + '"</i> <br><br> Regards,<br> Automation Team'
+	$Subject = "Warning: " + $TestName + " is not Responding On " + (hostname)
+	$Message = '<h1>Warning:  ' + $TestName + ' is not responding at '+ (Get-Date) +'.</h1><p>Dear Customer ,<br><br> ' + $TestName + ' on ' + [System.Net.Dns]::GetHostByName((hostname)).HostName + ' have failed with this error: <br><br><i>"' + $ErrorText + '"</i> <br><br> Regards,<br> Automation Team'
 	
 	New-Item -Path "C:\SendErrorMail" -ItemType Directory -Force -ErrorAction SilentlyContinue
 	
@@ -634,7 +636,7 @@ If (Test-path $RDStmpfolder) {zip-file -ZipFile "$tmpfolder$filename" -Add $RDSt
             # Settings this option prevents the creation of the user profile on the remote system 
             $SesOpt = New-PSSessionOption -NoMachineProfile 
             # Start a new Remote Session
-            $ses = New-PSSession -ComputerName $iComputername -ErrorAction SilentlyContinue -Credential $cred
+            $ses = New-PSSession -ComputerName $iComputername   -Credential $cred
             # Execute the ZIP-EClogs function on the remote machine. 
             $ab = Invoke-Command -Session $ses -ScriptBlock ${function:ZIP-EClogs} -ArgumentList $iComputername, $ThisComputer, $cred, $localtmpfolder
             # Get the path of archived log from remote mathine.
