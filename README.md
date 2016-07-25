@@ -1,8 +1,8 @@
-![BriForum 2016 Boston](http://briforum.com/shared/images/logos/techtarget/white/BriForum.png "BriForum Logo") 
 
-## BriForum 2016 Boston
 ![Ericom::Access Done Right](http://www.ericom.com/imgs/home/EricomLogo2.jpg "Ericom Logo") 
+## BriForum 2016 Boston
 
+![BriForum 2016 Boston](http://briforum.com/shared/images/logos/techtarget/white/BriForum.png "BriForum Logo") 
 
 ##### Track 2: Build an RDSH App and Desktop Virtualization Environment in Amazon AWS
 Presented by: James Lui, Head of Software Management, Ericom Software Inc., Erez Pasternak, Director of Innovation, Ericom Software Inc.
