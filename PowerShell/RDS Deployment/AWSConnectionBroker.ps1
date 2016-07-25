@@ -26,7 +26,7 @@ $SessionHost      = "rdcb.ericom.local"
 # Active Directory 
 $domainName = "test.local"
 $AdminUser = "admin@test.local"
-$AdminPassword = "admin"
+$AdminPassword = "password"
 
 # E-mail Settings
 $To = "erez.pasternak@ericom.com"
@@ -37,7 +37,7 @@ $emailTemplate = "WebServer\DaaS\emails\ready.html"
 $From = "daas@ericom.com"
 $SMTPServer = "ericom-com.mail.protection.outlook.com"
 $SMTPSUser = "daas@ericom.com"
-$SMTPassword = "1qaz@Wsx#a"
+$SMTPassword = "password"
 $SMTPPort = 25
 
 
