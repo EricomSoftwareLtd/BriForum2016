@@ -8,7 +8,7 @@
 ##### Track 2: Build an RDSH App and Desktop Virtualization Environment in Amazon AWS
 Presented by:
 
- [James Lui](http://www.linkedin.com/in/james-lui-3038324), Head of Software Management, [Ericom Software Inc](http://www.ericom.com/Default.asp)., 
+ [James Lui](http://www.linkedin.com/in/james-lui-3038324), Head of Product Management, [Ericom Software Inc](http://www.ericom.com/Default.asp)., 
  
  [Erez Pasternak](http://www.linkedin.com/in/erezpasternak), Director of Innovation, [Ericom Software Inc](http://www.ericom.com/Default.asp).
 
