@@ -12,7 +12,8 @@ Presented by:
  
  [Erez Pasternak](http://www.linkedin.com/in/erezpasternak), Director of Innovation, [Ericom Software Inc](http://www.ericom.com/Default.asp).
 
-
+© Ericom Software 2016
+Unless otherwise noted, this presentation (including the scripts included therein) is licensed under the Eclipse Public License https://www.eclipse.org/legal/epl-v10.html.”
 [Amazon AWS](https://aws.amazon.com/?nc2=h_lg) provides a virtual datacenter in the cloud to allow you to take advantage of OPEX based pricing. Join this session to learn the necessary AWS jargon to setup your own subnets, route tables, gateways, etc. Expert James Lui will dive deep into the AWS IaaS stack to show you how things work in the cloud world. He’ll explain how to connect your cloud infrastructure to on-premise to get the most out of a hybrid cloud solution. In this session, you’ll learn how to:
 
 AWS virtual private cloud basics
