@@ -5,8 +5,8 @@
 ![Ericom::Access Done Right](http://www.ericom.com/imgs/home/EricomLogo2.jpg "Ericom Logo")  ![BriForum 2016 Boston](http://briforum.com/shared/images/logos/techtarget/white/BriForum.png "BriForum Logo") 
 ## [BriForum 2016 Boston](http://briforum.com/2016/US/)
 
-© Ericom Software 2016
-Unless otherwise noted, this presentation (including the scripts included therein) is licensed under the Eclipse Public License https://www.eclipse.org/legal/epl-v10.html.”
+©Ericom Software 2016
+Unless otherwise noted, this presentation (including the scripts included therein) is licensed under the Eclipse Public License https://www.eclipse.org/legal/epl-v10.html.
 
 
 ##### Track 2: Build an RDSH App and Desktop Virtualization Environment in Amazon AWS
